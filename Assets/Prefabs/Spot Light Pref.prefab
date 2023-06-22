@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1468105169729336395}
   - component: {fileID: 1468105169729336394}
+  - component: {fileID: 7871020613746948377}
   m_Layer: 0
   m_Name: Spot Light Pref
   m_TagString: Untagged
@@ -44,9 +45,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0, g: 0.07144785, b: 1, a: 1}
-  m_Intensity: 100
-  m_Range: 200
-  m_SpotAngle: 4
+  m_Intensity: 1
+  m_Range: 500
+  m_SpotAngle: 3
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -78,7 +79,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -94,3 +95,20 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &7871020613746948377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468105169729336393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f31bcf2ec9524645998ab472b52c378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currColor: {r: 0, g: 0, b: 0, a: 0}
+  nextColor: {r: 1, g: 0, b: 0, a: 1}
+  ColorChangeSpeed: 0.1
+  ColorDiff: 0
+  XTimes: 10
